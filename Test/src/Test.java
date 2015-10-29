@@ -5,6 +5,7 @@ public class Test
 
 	public static void main(String[] args)
 	{
-		System.out.println("aaaa".intern());
+		String filename = "xxx111.war";
+		System.out.println(filename.substring(0, filename.lastIndexOf(".")));
 	}
 }
