@@ -1,4 +1,4 @@
-package trappingrainwater;
+package leetcode.java.trappingrainwater;
 
 /**
  * Based on
