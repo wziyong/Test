@@ -1,4 +1,4 @@
-package trappingrainwater;
+package leetcode.java.trappingrainwater;
 
 public class Solution {
 	public int trap(int[] height) {
