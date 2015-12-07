@@ -1,5 +1,3 @@
-import java.util.concurrent.SynchronousQueue;
-
 public class Test
 {
 
@@ -7,5 +5,6 @@ public class Test
 	{
 		String filename = "xxx111.war";
 		System.out.println(filename.substring(0, filename.lastIndexOf(".")));
+		Math.max(1, 2);
 	}
 }
