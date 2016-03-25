@@ -1,11 +1,11 @@
-package datastructrue.sort.quicksort;
+package sort;
 
-public class QuickSort
+public class 快速排序
 {
-	public int partition(int[] A, int l, int r)
+	public int partition(int[] A, int left, int right)
 	{
-		int x = A[l];// 第一个元素为分隔点
-		int i = l, j = r;
+		int x = A[left];// 第一个元素为分隔点
+		int i = left, j = right;
 		while (i < j)
 		{
 			// 从右向左找小于x的书来填A[i]
@@ -32,19 +32,19 @@ public class QuickSort
 		return i;
 	}
 
-	public void quickSort(int[] A, int l, int r)
+	public void quickSort(int[] A, int left, int right)
 	{
-		if (l < r)
+		if (left < right)
 		{
-			int i = partition(A, l, r);
-			quickSort(A, l, i - 1);
-			quickSort(A, i + 1, r);
+			int i = partition(A, left, right);
+			quickSort(A, left, i - 1);
+			quickSort(A, i + 1, right);
 		}
 	}
 
 	public static void main(String[] args)
 	{
-		QuickSort sort = new QuickSort();
+		快速排序 sort = new 快速排序();
 
 		int[] A = { 2, 5, 9, 8, 7, 1, 10 };
 		sort.quickSort(A, 0, A.length - 1);
